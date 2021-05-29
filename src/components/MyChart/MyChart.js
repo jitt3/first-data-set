@@ -37,24 +37,27 @@ const MyChart = () => {
       </div>
       <hr />
       <div className={`${blockEl}__container-chart`}>
-        <h3>Mexico daily vaccination progress</h3>
+        <h3>Mexico Daily vaccination progress</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maxime
-          molestias reiciendis unde doloribus eligendi labore laborum quam cum
-          perferendis! Perspiciatis quaerat minima incidunt numquam pariatur sed
-          eos velit praesentium!
+          The following chat shows the daily progress of vaccinations in Mexico
+          since December 2020. We decided to show the data in this kind of chart
+          because it represents it like a heatmap so for we can know, for
+          instance, that from December to February, vaccination progress had the
+          highest peak; hence a lot of people were vaccinated in that period.
         </p>
         <Chart
+          width={'100%'}
           height={400}
           chartType="Calendar"
           loader={<div>Loading Chart</div>}
           data={MexicoVaccination}
           options={{
             calendar: {
+              cellSize: 18,
               cellColor: {
-                stroke: 'white', // Color the border of the squares.
-                strokeOpacity: 0.1, // Make the borders half transparent.
-                strokeWidth: 1, // ...and two pixels thick.
+                stroke: 'white',
+                strokeOpacity: 0.1,
+                strokeWidth: 1,
               },
               focusedCellColor: {
                 stroke: 'white',
