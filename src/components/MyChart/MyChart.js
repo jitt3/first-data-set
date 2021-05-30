@@ -41,9 +41,9 @@ const MyChart = () => {
         <p>
           The following chat shows the daily progress of vaccinations in Mexico
           since December 2020. We decided to show the data in this kind of chart
-          because it represents it like a heatmap so for we can know, for
-          instance, that from December to February, vaccination progress had the
-          highest peak; hence a lot of people were vaccinated in that period.
+          because it represents it like a heatmap so we can know, for instance,
+          that from December to February, vaccination progress had the highest
+          peak; hence a lot of people were vaccinated in that period.
         </p>
         <Chart
           width={'100%'}

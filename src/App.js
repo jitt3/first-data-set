@@ -5,11 +5,11 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Data visualization</h1>
-      </header>
-      <Introduction />
       <Suspense fallback={<div>Loading...</div>}>
+        <header>
+          <h1>Data visualization</h1>
+        </header>
+        <Introduction />
         <MyChart />
       </Suspense>
     </div>
